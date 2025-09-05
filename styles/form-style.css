@@ -1,0 +1,21 @@
+@import url('variables.css');
+
+/*****************************
+* EVERYTHING THAT IS RELATED TO THE FORM
+*****************************/
+
+.input-todo-el {
+  border: none;
+  border-bottom: solid rgba(0, 0, 0, 0.4) 1px;
+  background-color: var(--background-color);
+  outline: none;
+  width: 80%;
+  padding: 4px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}

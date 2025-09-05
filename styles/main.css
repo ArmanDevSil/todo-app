@@ -1,0 +1,36 @@
+@import url('form-style.css');
+@import url('general.css');
+@import url('todo-app.css');
+@import url('variables.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', 'Inter';
+  font-size: 2rem;
+  background: var(--background-color);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  position: relative;
+}
+
+i {
+  font-size: 1.6rem;
+}
+
+h1 {
+  margin-bottom: 2.4rem;
+}

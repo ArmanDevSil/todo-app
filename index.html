@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Style Sheet -->
+    <link href="styles/main.css" rel="stylesheet" />
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <div class="container todo-app-container flex flex--column">
+      <header>
+        <h1>To-Do List</h1>
+      </header>
+      <main class="flex flex--centered flex--column">
+        <!-- Add todo button -->
+        <div class="container btn-container flex flex--space-between">
+          <button class="btn btn-add-new-todo">add todo</button>
+        </div>
+
+        <!-- Todo Form -->
+        <form class="flex flex--space-between hidden">
+          <input
+            type="text"
+            class="input-todo-el"
+            placeholder="Add todo"
+            required
+          />
+          <div class="container btn-container">
+            <button type="submit" class="btn btn-submit-todo">
+              <i class="fa fa-solid fa-circle-plus"></i> &nbsp;add
+            </button>
+          </div>
+        </form>
+
+        <!-- Todo List -->
+        <ul class="list-container flex flex--column"></ul>
+      </main>
+    </div>
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>
